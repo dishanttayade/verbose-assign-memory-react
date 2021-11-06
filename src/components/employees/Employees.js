@@ -1,7 +1,7 @@
 import edata from '../Data.json'
 const Employees = ()=> {
     return (
-        <div style={{margin:"50px"}}>
+        <div style={{margin:"50px", color:"white"}}>
             <h1>{edata[3].title}</h1>
             {
                 edata[3].employees.map( (e) => (

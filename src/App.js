@@ -10,10 +10,12 @@ import Contact from "./components/contanct/Contact";
 import Employees from "./components/employees/Employees";
 import Home from "./components/home/Home";
 import Navbar from "./components/Navbar/Navbar";
+import background from './components/img/background.jpg'
 // import Header from "./Header";
 
 function App() {
   return ( 
+	  <div style={{ backgroundImage: `url(${background})`, height:'100vh' }}>
         <Router>
             <main>
 				<Navbar />
@@ -31,6 +33,7 @@ function App() {
 				</Routes>
 			</main>
         </Router>
+	</div>
   );
 }
 
